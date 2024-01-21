@@ -1,13 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement; // Import the SceneManager class
 
 public partial class MainMenu : MonoBehaviour
 {
-   public void PlayGame()
-   {
-      SceneManager.LoadSceneAsync(1);
-   }
+    public void StartGame()
+    {
+        Debug.Log("StartGame method called");
+
+        // Load the "SampleScene" when the button is clicked
+        SceneManager.LoadScene("SampleScene");
+    }
+
 }
 
